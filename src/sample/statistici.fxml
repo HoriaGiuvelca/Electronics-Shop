@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StatisticiController">
+   <children>
+      <Button layoutX="82.0" layoutY="35.0" mnemonicParsing="false" onAction="#home" text="Home" />
+      <Button layoutX="192.0" layoutY="116.0" mnemonicParsing="false" text="best-sellers" />
+      <Button layoutX="601.0" layoutY="129.0" mnemonicParsing="false" text="top ieftine" />
+      <Button layoutX="195.0" layoutY="201.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="49.0" text="&lt;pret" />
+      <Button layoutX="601.0" layoutY="201.0" mnemonicParsing="false" text="Button" />
+      <TableView fx:id="table" layoutX="23.0" layoutY="283.0" prefHeight="362.0" prefWidth="847.0">
+        <columns>
+          <TableColumn fx:id="brand" prefWidth="96.80002021789551" text="brand" />
+          <TableColumn fx:id="gama" prefWidth="181.60002899169922" text="gama" />
+            <TableColumn fx:id="model" prefWidth="359.1999816894531" text="model" />
+            <TableColumn fx:id="pret" minWidth="0.0" prefWidth="208.800048828125" text="Pret" />
+        </columns>
+      </TableView>
+      <TextField fx:id="camp_valoare" layoutX="32.0" layoutY="201.0" prefHeight="26.0" prefWidth="144.0" />
+      <Label layoutX="68.0" layoutY="169.0" text="valoare:" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ModeleController">
+   <children>
+      <TableView fx:id="table" layoutX="23.0" layoutY="108.0" prefHeight="430.0" prefWidth="856.0">
+        <columns>
+          <TableColumn fx:id="brand" prefWidth="98.39999580383301" text="Brand" />
+          <TableColumn fx:id="gama" prefWidth="103.99999237060547" text="Gama" />
+            <TableColumn fx:id="model" prefWidth="82.4000244140625" text="Model" />
+            <TableColumn fx:id="camera" prefWidth="75.20001220703125" text="Camera(MP)" />
+            <TableColumn fx:id="ram" prefWidth="67.20001220703125" text="RAM(GB)" />
+            <TableColumn fx:id="memorie" prefWidth="81.60000610351562" text="Memorie(GB)" />
+            <TableColumn fx:id="garantie" prefWidth="98.4000244140625" text="Garantie(luni)" />
+            <TableColumn fx:id="stoc" prefWidth="51.199951171875" text="Stoc" />
+            <TableColumn fx:id="pret" prefWidth="68.80010986328125" text="Pret(lei)" />
+            <TableColumn fx:id="diagonala" prefWidth="119.199951171875" text="Diagonala(inch)" />
+        </columns>
+      </TableView>
+      <Label layoutX="350.0" layoutY="49.0" text="Modele Tableta">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="41.0" layoutY="37.0" mnemonicParsing="false" text="Acasa" />
+      <Button layoutX="771.0" layoutY="617.0" mnemonicParsing="false" onAction="#add" text="Adauga" />
+      <Button layoutX="829.0" layoutY="617.0" mnemonicParsing="false" text="Sterge" />
+      <TextField fx:id="camp_gama" layoutX="148.0" layoutY="571.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="camp_model" layoutX="268.0" layoutY="571.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="camp_camera" layoutX="391.0" layoutY="571.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="camp_ram" layoutX="513.0" layoutY="571.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="camp_memorie" layoutX="635.0" layoutY="571.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="camp_garantie" layoutX="756.0" layoutY="571.0" prefHeight="26.0" prefWidth="122.0" />
+      <Label layoutX="192.0" layoutY="548.0" text="Gama" />
+      <Label layoutX="312.0" layoutY="548.0" text="Model" />
+      <Label layoutX="417.0" layoutY="548.0" text="Camera(MP)" />
+      <Label layoutX="547.0" layoutY="548.0" text="RAM(GB)" />
+      <Label layoutX="661.0" layoutY="548.0" text="Memorie(GB)" />
+      <Label layoutX="782.0" layoutY="548.0" text="Garantie(luni)" />
+      <TextField fx:id="camp_stoc" layoutX="27.0" layoutY="604.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="camp_pret" layoutX="147.0" layoutY="604.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="camp_diagonala" layoutX="268.0" layoutY="604.0" prefHeight="26.0" prefWidth="122.0" />
+      <Label layoutX="75.0" layoutY="634.0" text="Stoc" />
+      <Label layoutX="188.0" layoutY="634.0" text="Pret(lei)" />
+      <Label layoutX="287.0" layoutY="634.0" text="Diagonala(inch)" />
+      <TextField fx:id="camp_brand" layoutX="27.0" layoutY="572.0" prefHeight="26.0" prefWidth="122.0" />
+      <Label layoutX="74.0" layoutY="548.0" text="Brand" />
+   </children>
+</AnchorPane>
